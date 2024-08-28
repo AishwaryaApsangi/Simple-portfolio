@@ -260,23 +260,16 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
-/* Center the yellow button specifically */
-.button-container {
-    display: flex;
-    justify-content: center; /* Centers the button horizontally */
-    margin-top: 2rem; /* Adds some spacing above */
-}
-
+/* New yellow button styling with gradient effect */
 .btn--yellow {
     position: relative;
     display: inline-block;
-    padding: 1rem 3rem; /* Adjust padding as needed */
+    padding: 1rem 4.2rem;
     text-decoration: none;
-    color: var(--black); /* Text color */
-    border: 1px solid #ffd700; /* Yellow border */
+    color: var(--black); /* Assuming black text looks good on yellow */
+    border: 1px solid #ffd700; /* Adjust to a yellow border */
     background: linear-gradient(135deg, #ffec99, #ffd700); /* Yellow gradient */
     font-weight: 400;
-    white-space: nowrap; /* Prevent text from wrapping */
     transition: all 0.2s;
 }
 
@@ -296,7 +289,15 @@ body:not(.user-is-tabbing) a:focus {
 .btn--yellow:hover::after,
 .btn--yellow:focus::after {
     right: 0;
-    background: #ffd700; /* Yellow gradient on hover */
+    background: #ffd700; /* Same yellow gradient on hover */
+}
+
+/* Center the new yellow button */
+.btn-center-yellow {
+    display: block; /* Make it a block-level element */
+    margin: 1rem auto; /* Center it with auto margins */
+    max-width: fit-content; /* Ensure it only takes as much width as needed */
+    text-align: center; /* Center text inside the button */
 }
 
 
@@ -509,10 +510,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center all child elements horizontally */
-    text-align: center; /* Center text within the parent */
+    flex: 0 0 30%;
 }
 
 .work__list {
