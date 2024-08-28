@@ -260,16 +260,17 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
-/* New yellow button styling with gradient effect */
+/* Yellow button styling with gradient effect */
 .btn--yellow {
     position: relative;
     display: inline-block;
-    padding: 1rem 4.2rem;
+    padding: 1rem 3rem; /* Adjust padding as needed to fit text in one line */
     text-decoration: none;
-    color: var(--black); /* Black text color */
+    color: var(--black); /* Text color */
     border: 1px solid #ffd700; /* Yellow border */
     background: linear-gradient(135deg, #ffec99, #ffd700); /* Yellow gradient */
     font-weight: 400;
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
     transition: all 0.2s;
 }
 
@@ -292,13 +293,16 @@ body:not(.user-is-tabbing) a:focus {
     background: #ffec99; /* Yellow gradient on hover */
 }
 
-/* Center the new yellow button */
+/* Center the yellow button */
 .btn-center-yellow {
     display: block; /* Make it a block-level element */
-    margin: 1.5rem auto; /* Center it horizontally with top and bottom margins */
+    margin: 1.5rem auto; /* Center it horizontally */
     text-align: center; /* Center text inside the button */
     max-width: fit-content; /* Ensure the button width fits its content */
 }
+
+/* Ensure parent container aligns items centrally */
+
 
 
 .link__text {
@@ -510,7 +514,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+    text-align: center; /* Center text within the parent */
 }
 
 .work__list {
