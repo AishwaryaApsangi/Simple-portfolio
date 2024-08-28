@@ -260,7 +260,13 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
-/* Yellow button styling with gradient effect */
+/* Center the yellow button specifically */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 2rem; /* Adds some spacing above */
+}
+
 .btn--yellow {
     position: relative;
     display: inline-block;
@@ -291,13 +297,6 @@ body:not(.user-is-tabbing) a:focus {
 .btn--yellow:focus::after {
     right: 0;
     background: #ffd700; /* Yellow gradient on hover */
-}
-
-/* Specific container class for centering the button */
-.button-container {
-    display: flex;
-    justify-content: center; /* Center the button */
-    margin-top: 2rem; /* Add margin to space it out */
 }
 
 
