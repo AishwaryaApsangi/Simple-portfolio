@@ -264,13 +264,13 @@ body:not(.user-is-tabbing) a:focus {
 .btn--yellow {
     position: relative;
     display: inline-block;
-    padding: 1rem 3rem; /* Adjust padding as needed to fit text in one line */
+    padding: 1rem 3rem; /* Adjust padding to fit text on one line */
     text-decoration: none;
-    color: var(--black); /* Text color */
+    color: var(--black); /* Black text color */
     border: 1px solid #ffd700; /* Yellow border */
     background: linear-gradient(135deg, #ffec99, #ffd700); /* Yellow gradient */
     font-weight: 400;
-    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    white-space: nowrap; /* Prevent text from wrapping */
     transition: all 0.2s;
 }
 
@@ -296,14 +296,10 @@ body:not(.user-is-tabbing) a:focus {
 /* Center the yellow button */
 .btn-center-yellow {
     display: block; /* Make it a block-level element */
-    margin: 1.5rem auto; /* Center it horizontally */
+    margin: 1.5rem auto; /* Center horizontally */
     text-align: center; /* Center text inside the button */
     max-width: fit-content; /* Ensure the button width fits its content */
 }
-
-/* Ensure parent container aligns items centrally */
-
-
 
 .link__text {
     position: relative;
