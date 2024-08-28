@@ -266,8 +266,8 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: var(--black); /* Assuming black text looks good on yellow */
-    border: 1px solid #ffd700; /* Adjust to a yellow border */
+    color: var(--black); /* Black text color */
+    border: 1px solid #ffd700; /* Yellow border */
     background: linear-gradient(135deg, #ffec99, #ffd700); /* Yellow gradient */
     font-weight: 400;
     transition: all 0.2s;
@@ -283,21 +283,21 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
-    background: #ffec99; /* Consistent gradient effect */
+    background: #ffd700; /* Consistent gradient effect */
 }
 
 .btn--yellow:hover::after,
 .btn--yellow:focus::after {
     right: 0;
-    background: #ffd700; /* Same yellow gradient on hover */
+    background: #ffec99; /* Yellow gradient on hover */
 }
 
 /* Center the new yellow button */
 .btn-center-yellow {
     display: block; /* Make it a block-level element */
-    margin: 1rem auto; /* Center it with auto margins */
-    max-width: fit-content; /* Ensure it only takes as much width as needed */
+    margin: 1.5rem auto; /* Center it horizontally with top and bottom margins */
     text-align: center; /* Center text inside the button */
+    max-width: fit-content; /* Ensure the button width fits its content */
 }
 
 
